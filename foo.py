@@ -12,4 +12,3 @@ Heidi's First testcase
 	Press Key    lst-ib    \\13
 	Wait Until Page Contains    https://www.hs.fi    10 s
     Go To https://github.com/aalperi/robotlearning.git
-
