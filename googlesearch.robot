@@ -11,7 +11,8 @@ Heidi's First testcase
     Input Text  id:lst-ib  helsingin sanomat
 	Press Key    lst-ib    \\13
 	Wait Until Page Contains    https://www.hs.fi    10 s
-    Go To  https://github.com/aalperi/robotlearning.git
+    Go To  https://github.com/aalperi/
     [teardown]  Close Browser
-
+*** comment  ***
+Heidin kommentti.
 
