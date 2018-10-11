@@ -1,6 +1,7 @@
 *** Settings ***
 Documentation  Annetaan parametrina tunnukset ja kirjaudutaan sisään
 Library           Selenium2Library
+Library           BuiltIn
 
 *** Variables ***
 ${URL}  https://www.spotify.com
@@ -16,7 +17,9 @@ Heidi's Second testcase
 	Click Element  id:header-login-link
 	wait until page contains Element  id:login-button
 	Input text  name:username  ${USERID}
+	Sleep  10s
 	Input password  name:password  ${PWD}
+	Sleep  10s
     click element  id:login-button
 	wait until page contains  Spotify  10s
 	Click link  href:https://www.spotify.com/fi/account/overview/
