@@ -12,7 +12,6 @@ ${PWD}
 *** Test Cases ***
 Heidi's Second testcase
     Open Browser    ${URL}    browser=chrome
-    Maximize Browser Window
 	Wait Until Page Contains    Kirjaudu sisään    10 s
 	Click Element  id:header-login-link
 	wait until page contains Element  id:login-button
@@ -30,4 +29,5 @@ Heidi's Second testcase
     [teardown]  Close Browser
 *** comment  ***
 Heidin kommentti.
+robot --variable USERID:xx --variable PWD:xx logintospotify.robot
 
